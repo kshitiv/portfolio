@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Kshiti V</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body style="background:#C8C8C8; color:black;">
+
+<!-- ================= NAVIGATION BAR ================= -->
+<nav class="nav-bar">
+  <div class="nav-left">
+    <a href="https://wa.me/919632551658" target="_blank"><img src="images/whatsapp.png" class="nav-icon"></a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kshitivinod@gmail.com"target="_blank"><img src="images/gmail.png" class="nav-icon"></a>
+    <a href="https://www.linkedin.com/in/kshiti-v-900b292a3" target="_blank"><img src="images/linkedin.png" class="nav-icon"></a>
+    <a href="https://github.com/kshiti-v" target="_blank"><img src="images/github.png" class="nav-icon"></a>
+  </div>
+
+  <div class="nav-right">
+    <a class="tab-btn" href="index.html">HOME</a>
+    <a class="tab-btn" href="about.html">ABOUT</a>
+    <a class="tab-btn" href="projects.html">PROJECTS</a>
+    <a class="tab-btn" href="contact.html">CONTACT</a>
+  </div>
+</nav>
+
+<hr class="nav-line">
+
+<!-- ================= HEADING ================= -->
+<h2 style="
+  text-align:center;
+  font-size:48px;
+  font-weight:800;
+  margin-top:30px;
+  margin-bottom:30px;
+">
+  CONTACT
+</h2>
+
+<!-- ================= CONTACT SECTION ================= -->
+<div class="contact-grid" style="
+  max-width:1100px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  padding:20px;
+">
+
+  <!-- LEFT SIDE CONTACT DETAILS -->
+  <div class="contact-left" style="font-size:20px; line-height:1.7;">
+    
+    <div class="contact-row">
+      <img src="images/phone.png" class="icon">
+      <span>9632551658</span>
+    </div>
+
+    <div class="contact-row">
+      <img src="images/gmail.png" class="icon">
+       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kshitivinod@gmail.com"target="_blank">kshitivinod@gmail.com</a>
+    </div>
+
+    <div class="contact-row">
+      <img src="images/whatsapp.png" class="icon">
+      <a href="https://wa.me/919632551658" target="_blank" class="contact-link">Chat on WhatsApp</a>
+    </div>
+
+    <div class="contact-row">
+      <img src="images/linkedin.png" class="icon">
+      <a href="https://www.linkedin.com/in/kshiti-v-900b292a3" target="_blank" class="contact-link">linkedin.com/in/kshiti-v</a>
+    </div>
+
+    <div class="contact-row">
+      <img src="images/github.png" class="icon">
+      <a href="https://github.com/kshitiv" target="_blank" class="contact-link">github.com/kshiti-v</a>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE SIGN-UP FORM -->
+  <div class="contact-right">
+    <form class="signup-form" id="signupForm">
+  <input type="text" id="signupName" placeholder="Your Name" required>
+  <input type="email" id="signupEmail" placeholder="Your Email" required>
+
+  <!-- IMPORTANT: type="button" (not submit) -->
+  <button type="button" class="signup-btn" id="signupBtn">
+    Keep Me Signed Up
+  </button>
+</form>
+
+  </div>
+
+</div>
+
+</body>
+</html>

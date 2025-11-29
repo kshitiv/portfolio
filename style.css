@@ -1,0 +1,257 @@
+/* -------- RESET -------- */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Poppins, sans-serif; color:black; }
+
+/* ============================================================
+   NEW NAVIGATION BAR (ABOUT / PROJECTS / CONTACT PAGES ONLY)
+   ============================================================ */
+.nav-bar {
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 22px;
+  background:transparent;
+}
+
+.nav-left {
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.nav-left .nav-icon {
+  width:28px;
+  height:28px;
+  object-fit:contain;
+  cursor:pointer;
+  transition:transform .2s;
+}
+
+.nav-left .nav-icon:hover { transform:scale(1.12); }
+
+.nav-right {
+  display:flex;
+  gap:14px;
+}
+
+.nav-right .tab-btn {
+  background:black;
+  color:white;
+  padding:10px 20px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.2s;
+}
+
+.nav-right .tab-btn:hover {
+  opacity:.85;
+  transform:translateY(-2px);
+}
+
+.nav-line {
+  width:100%;
+  height:1.5px;
+  background:rgba(0,0,0,0.25);
+  border:none;
+  margin-bottom:18px;
+}
+
+/* ============================================================
+   HOME PAGE — LARGE TEXT + LEFT ALIGNED
+   ============================================================ */
+
+.home-hero {
+  display: flex;
+  align-items: center;     
+  justify-content: flex-start;   /* LEFT aligned */
+  padding: 80px;
+  min-height: 100vh;
+  text-align: left;        /* forces text left */
+}
+
+.home-left {
+  max-width: 900px;        /* wide section */
+}
+
+/* BIG NAME */
+.name {
+  font-size: 78px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* COLLEGE */
+.college {
+  font-size: 32px;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* TAGLINE */
+.tagline {
+  font-size: 26px;
+  margin-top: 15px;
+  font-style: italic;
+  max-width: 700px;
+  text-align: left;
+}
+
+/* LINKS (About / Projects / Contact) */
+.home-links {
+  margin-top: 40px;
+}
+
+.home-text-link {
+  font-size: 34px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.home-text-link:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* ============================================================
+   ABOUT PAGE GRID LAYOUT (PHOTO LEFT + TEXT RIGHT)
+   ============================================================ */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;   /* left = image, right = text */
+  gap: 30px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 10px 20px;
+}
+
+.about-photo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-pic {
+  width: 260px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.about-content {
+  text-align: left;
+  color: black;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-align: center;   /* centered heading */
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+/* Responsive layout for tablets & phones */
+@media (max-width: 850px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .about-photo {
+    justify-content: flex-start;
+  }
+
+  .profile-pic {
+    width: 220px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+}
+/* ============================================================
+   PROJECTS GRID
+   ============================================================ */
+.projects-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin:30px;
+}
+
+@media(max-width:900px) {
+  .projects-grid { grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:600px) {
+  .projects-grid { grid-template-columns:1fr; }
+}
+
+.project-card {
+  background:white;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+  color:black;
+  box-shadow:0 6px 20px rgba(0,0,0,0.12);
+}
+
+.project-img {
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:8px;
+}
+
+/* ============================================================
+   CONTACT PAGE
+   ============================================================ */
+
+.signup-form input {
+  width:100%;
+  padding:10px;
+  margin:6px 0;
+  border-radius:6px;
+  border:1px solid #aaa;
+}
+
+/* CONTACT PAGE ICON SIZE MATCH TEXT */
+.icon {
+  width: 22px;       /* size same as text height */
+  height: 22px;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.signup-btn {
+  padding:10px;
+  border:none;
+  background:black;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  margin-top:8px;
+  font-weight:600;
+}
